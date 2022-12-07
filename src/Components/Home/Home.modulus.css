@@ -1,0 +1,116 @@
+.home .container {
+    gap: 80px;
+}
+
+.home .container .pow .contain {
+    background-color: var(--wt-color);
+    box-shadow: var(--box1);
+    gap: 50px;
+    padding: 30px;
+    position: relative;
+}
+
+.home .container .pow .contain picture img {
+    width: 200px;
+}
+
+.home .container .pow .contain .info {
+    gap: 20px;
+}
+
+.home .container .pow .contain .info .name {
+    font-size: 35px;
+}
+
+.home .container .pow .contain .info .week {
+    font-size: 25px;
+    color: var(--blk-color);
+}
+
+.home .container .pow .contain .info .week span {
+    color: var(--main-color);
+}
+
+.home .container .pow .contain .progress-line {
+    position: absolute;
+    width: 60%;
+    background-color: #15e78c;
+    height: 10px;
+    bottom: 0;
+    left: 0;
+    border-radius: 100px 100px 0 0;
+    overflow: hidden;
+}
+
+.home .container .pow .contain .progress-line::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: #00c16e;
+    transition: var(--trans);
+    animation-name: progress;
+    animation-fill-mode: both;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes progress {
+    100% {
+        height: 3000px;
+        width: 3000px;
+        opacity: .1;
+    }
+}
+
+.home .container .recent-week .contain {
+    gap: 50px;
+}
+
+.home .container .recent-week .contain .boxes {
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 50px;
+}
+
+.home .container .recent-week .contain .boxes .week {
+    background-color: var(--wt-color);
+    transition: var(--trans);
+    font-size: 20px;
+    border: 2px solid #eee;
+    gap: 20px;
+}
+
+.home .container .recent-week .contain .boxes .week:hover {
+    cursor: pointer;
+    box-shadow: var(--box);
+    border-color: var(--main-color);
+}
+
+.home .container .recent-week .contain .boxes .week .icon {
+    width: 100%;
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.home .container .recent-week .contain .boxes .week .icon img {
+    width: 100%;
+    position: absolute;
+    top: -25%;
+}
+
+.home .container .recent-week .contain .boxes .week article {
+    padding: 20px;
+}
+
+.home .container .recent-week .contain .boxes .week article .week-name {
+    font-size: 25px;
+}
+
+.home .container .recent-week .contain .boxes .week article .winner-week {
+    font-size: 20px;
+}

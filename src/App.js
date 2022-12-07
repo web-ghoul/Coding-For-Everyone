@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./Components/Home/Home"
+import Topics from "./Components/Topics/Topics"
+import NumSys from "./Components/Topics/NumSys/NumSys"
+import styles from "./Framework/CSS/Framework.modulus.css"
+import Main from "./Components/Main/Main"
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Main />}>
+          <Route index element={<Home />} />
+          <Route path ="home" element={<Home />} />
+          <Route path ="topics" element={<Topics />} />
+          <Route path ="NumSys" element={<NumSys />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
-
-export default App;

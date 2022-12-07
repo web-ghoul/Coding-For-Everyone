@@ -1,0 +1,25 @@
+footer .contain {
+    background-color: var(--blk-color);
+}
+
+footer .contain span {
+    color: var(--wt-color);
+    font-size: 35px;
+}
+
+footer .contain .icons {
+    gap: 20px;
+    transition: var(--trans);
+}
+
+footer .contain .icons .icon {
+    padding: 5px;
+}
+
+footer .contain .icons img {
+    width: 50px;
+}
+
+footer .contain .icons .icon:hover {
+    cursor: pointer;
+}

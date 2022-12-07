@@ -1,0 +1,17 @@
+.numsys .container .tutorial .contain {
+    gap: 50px;
+}
+
+.numsys .container .tutorial .contain .point .contain {
+    gap: 50px;
+    transform: translateX(20px);
+}
+
+.numsys .container .tutorial .contain .point .contain .part {
+    transform: translateX(40px);
+}
+
+.numsys .container .tutorial .contain .point .contain .part .dot {
+    transform: translateX(60px);
+    border: 2px solid var(--grey-color);
+}

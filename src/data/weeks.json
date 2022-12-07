@@ -1,0 +1,112 @@
+{
+    "week-0": {
+        "id": 0,
+        "name": "Numbers System",
+        "icon": 1,
+        "prog_of_week": "in Progress...",
+        "recent": true,
+        "urlImg": "/static/media/How%20To%20Get%20A%20Graphic%20Design%20Job%20Without%20Experience.3ab5e729d1138b38ae6c.png",
+        "link": "/NumSys",
+        "objective": {
+            "Understand the decimal , binary, octal and hexadecimal number systems.": {
+                "type of numbering systems": {
+                    "img": ["static/media/Number-System.4c6c5cb0a6a41decc8e4.png"],
+                    "dots": {
+                        "Decimal Number System": ["static/media/decimal.8133ac8591155584d95a.jpeg"],
+                        "Binary Number System": ["static/media/binary.8864f589bfa21d85f9fb.jpeg"],
+                        "Octal Number System": ["static/media/octal.b7fda7646d3b456c984b.jpeg"],
+                        "Hexadecimal Number System": ["static/media/hexa.1a1f298d8966d5f35e2b.jpeg"]
+                    }
+                },
+                "Decimal System": {
+                    "img": ["static/media/decimal1.1523c89e599ff12ca2be.jpeg"]
+                },
+                "Binary System": {
+                    "img": ["static/media/binary1.cfb1518d136d483e3ea7.jpeg"]
+                },
+                "Octal System": {
+                    "img": ["static/media/octal1.ef5081c47f33d6ef549e.jpeg", "static/media/octal10.0193814a626fbaed7142.jpeg"]
+                },
+                "Hexadeciaml System": {
+                    "img": ["static/media/hexa1.142f550a1fbadf23f8b7.jpeg"]
+                },
+                "Examples on Numbering Systems": {
+                    "img": ["static/media/examples-for-nums.0fe594fd5d4ef60ec9d1.jpeg"]
+                }
+            },
+            "Convert from one number system into another.": {
+                "Decimal Number to other Systems Number": {
+                    "img": [],
+                    "dots": {
+                        "Decimal to Binary": ["static/media/Decimal-to-Binary-Conversion1.10d3d45b2207e3d9c9a6.png"],
+                        "Decimal to Octal": ["static/media/Decimal-to-Octal-Conversion1.46a69d519c0332c3248a.png"],
+                        "Decimal to Hexadecimal": ["static/media/Decimal-to-Hexadecimal-Conversion1.7e9bef56a3f03d421b2d.png"]
+                    }
+                },
+                "Binary Number to other Systems Number": {
+                    "img": [],
+                    "dots": {
+                        "Binary to Decimal": ["static/media/Binary-to-Decimal-Conversion1.058897eb381839a1eb55.png"],
+                        "Binary to Octal": ["static/media/Binary-to-Octal-Conversion1.5a7c5f623a1d9ce3886e.png"],
+                        "Binary to Hexadecimal": ["static/media/Binary-to-Hexadecimal-Conversion1.f8b206bea434d45f2068.png"]
+                    }
+                },
+                "Octal Number to other Systems Number": {
+                    "img": [],
+                    "dots": {
+                        "Octal to Decimal": ["static/media/Octal-to-Decimal-Conversion1.7a37b9d4f51a385dab12.png"],
+                        "Octal to Binary": ["static/media/Octal-to-Binary-Conversion1.9837d1f441cf14350c7c.png"],
+                        "Octal to Hexadecimal": ["static/media/Octal-to-Hexadecimal-Conversion1.4be3e2fd73201d82b8ae.png"]
+                    }
+                },
+                "Hexadecimal Number to other Systems Number": {
+                    "img": [],
+                    "dots": {
+                        "Hexadecimal to Decimal": ["static/media/Hexadecimal-to-Decimal-Conversion1.072b16112cf36c69c051.png"],
+                        "Hexadecimal to Binary": ["static/media/Hexadecimal-to-Binary-Conversion1.c39676d9d5259d0dddf3.png"],
+                        "Hexadecimal to Octal": ["static/media/Hexadecimal-to-Octal-Conversion1.f742f0ca300845f2e738.png"]
+                    }
+                }
+            },
+            "Apply arithmetic operations to binary numbers.": {
+
+            }
+        }
+    },
+    "week-1": {
+        "id": 1,
+        "name": "Flowchart",
+        "icon": 2,
+        "prog_of_week": "in Progress...",
+        "recent": false,
+        "urlImg": "static/media/Draw%20a%20business%20process%20flow%20chart%20in%20just%205%20steps.c1413b7b72f02f4732c7.png",
+        "link": "/flowchart"
+    },
+    "week-2": {
+        "id": 2,
+        "name": "Pseudocode",
+        "icon": 3,
+        "prog_of_week": "in Progress...",
+        "recent": false,
+        "urlImg": "static/media/Financial%20web%20illustration.c2654b5506d0d38329cd.png",
+        "link": "/pseudocode"
+    },
+    "week-3": {
+        "id": 3,
+        "name": "Computer Architecture",
+        "icon": 4,
+        "prog_of_week": "in Progress...",
+        "recent": false,
+        "urlImg": "static/media/Isometric%20Editorial%20Illustrations%20by%20Coen%20Pohl.88dd090bd843e7edc364.png",
+        "link": "/computer-architecture"
+    },
+    "week-4": {
+        "id": 4,
+        "name": "Scratch",
+        "icon": 5,
+        "prog_of_week": "in Progress...",
+        "recent": false,
+        "urlImg": "static/media/UI%20Design%203D%20Illustration.f6e51a990b59e569df45.png",
+        "link": "/scratch"
+    }
+}

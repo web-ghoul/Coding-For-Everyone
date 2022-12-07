@@ -1,0 +1,31 @@
+header .contain {
+    background-color: var(--blk-color);
+    box-shadow: var(--box);
+}
+
+header .contain .logo {
+    gap: 30px;
+}
+
+header .contain .logo .icon {
+    font-size: 35px;
+    color: var(--main-color);
+}
+
+header .contain .logo picture img {
+    width: 100px;
+}
+
+header .contain nav ul {
+    gap: 50px;
+}
+
+header .contain nav ul li a {
+    font-size: 25px;
+    color: var(--wt-color);
+    transition: var(--trans);
+}
+
+header .contain nav ul li a:hover {
+    color: var(--main-color);
+}

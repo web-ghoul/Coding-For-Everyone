@@ -1,0 +1,64 @@
+.topics .container {
+    gap: 80px;
+}
+
+.topics .search {
+    gap: 30px;
+}
+
+.topics .search .fields {
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.topics .search input {}
+
+.topics .container .boxes {
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 50px;
+}
+
+.topics .container .boxes .week {
+    background-color: var(--wt-color);
+    transition: var(--trans);
+    font-size: 20px;
+    border: 2px solid #eee;
+    gap: 20px;
+}
+
+.topics .container .boxes .week:hover {
+    cursor: pointer;
+    box-shadow: var(--box);
+    border-color: var(--main-color);
+}
+
+.topics .container .boxes .week .icon {
+    width: 100%;
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.topics .container .boxes .week .icon img {
+    width: 100%;
+    position: absolute;
+    top: -25%;
+}
+
+.topics .container .boxes .week article {
+    gap: 20px;
+    padding: 20px;
+}
+
+.topics .container .boxes .week article .week-name {
+    font-size: 25px;
+}
+
+.topics .container .boxes .week article .week-num {
+    font-size: 22px;
+    color: var(--main-color);
+}
+
+.topics .container .boxes .week article .winner-week {
+    font-size: 20px;
+}
