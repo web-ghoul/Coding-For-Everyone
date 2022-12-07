@@ -1,6 +1,6 @@
 //Libraries
 import React,{useState,useEffect,useRef} from 'react';
-import week_data from '../../../data/weeks.json'
+import week_data from '../../../data/weeks.js'
 
 //Styles Files
 import styles from "../../../Framework/CSS/Framework.modulus.css"

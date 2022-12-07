@@ -3,21 +3,21 @@ import React,{useState,useEffect,useRef} from 'react';
 import { Outlet, Link } from "react-router-dom";
 
 //Json File
-import week_data from '../../data/weeks.json'
+import data from '../../data/weeks'
 
 //Styles Files
 import style from "./Home.modulus.css"
 import styles from "../../Framework/CSS/Framework.modulus.css"
 
 //Images 
-import winnerImg from "../Topics/NumSys/imgs/Hexadecimal-to-Octal-Conversion1.png"
-import recentImg from "../../Images/Cartoon Bearded Programmer in Glasses.jfif"
+import winnerImg from "../../Images/photo (2).svg"
+import recentImg from "../../Images/photo (1).jfif"
 
 //Components
 import Head from "../Main-Components/Head/Head"
-
+import Photo from "../Main-Components/Photo/Photo"
 const  Home = () =>{
-    const [weekData,useWeekData] = useState(week_data) 
+    const [weekData,useWeekData] = useState(data) 
     const [weeks,setWeeks] = useState([])
     const progLine = useRef();
     useEffect(()=>{
@@ -35,9 +35,7 @@ const  Home = () =>{
         <div className="container">
             <div className="pow">
                 <div className="contain flex start">
-                    <picture>
-                        <img src={winnerImg} alt="winner image"/>
-                    </picture>
+                    <Photo img={winnerImg} wid ={75}  desc={"winnerImg"}/>
                     <div className="info grid center">
                         <span className="name">In Progress...</span>
                         <span className="week">
@@ -57,9 +55,7 @@ const  Home = () =>{
                                 return (
                                     <div key={weekData[w].id} className="week grid stretch">
                                         <Link to = {weekData[w].link} >
-                                            <picture className="icon flex start">
-                                                <img src={weekData[w].urlImg} alt={weekData[w].icon} />
-                                            </picture>
+                                            <Photo img={require(`../../Images/${weekData[w].urlImg}`)} class={"icon"}  desc={weekData[w].icon}/>
                                             <article className='grid start'>
                                                 <div className="week-name">{weekData[w].name}</div>
                                                 <div className="winner-week">{weekData[w].prog_of_week}</div>

@@ -1,6 +1,6 @@
 // Libraries
 import React,{useState,useEffect,useRef} from 'react';
-import week_data from '../../../data/weeks.json'
+import data from '../../../data/weeks.js'
 
 //Styles Files
 import styles from "../../../Framework/CSS/Framework.modulus.css"
@@ -23,7 +23,7 @@ import Title from "../Title/Title"
 import Photo from "../Photo/Photo"
 
 const  Tutorial = (props) =>{
-    const [weekData,useWeekData] = useState(week_data) 
+    const [weekData,useWeekData] = useState(data) 
     const [weeks,setWeeks] = useState(props.week)
     const [objectiveNames, setObjectivesNames] = useState([])
     const [objects, setObjects] = useState([])
@@ -55,8 +55,9 @@ const  Tutorial = (props) =>{
                                                 <Title icon={GoPrimitiveDot} title={k} fontSize = {26}/>
                                                 {
                                                     object[k].img.map((img,i)=>{
+                                                        console.log(img)
                                                         return (
-                                                            <Photo img={img} wid ={75}  desc={k}/>
+                                                            <Photo img={require(`../../Topics/${props.ext}${img}`)} wid ={75}  desc={k}/>
                                                         )
                                                     })
                                                 }
@@ -67,7 +68,7 @@ const  Tutorial = (props) =>{
                                                             return (
                                                                 <div key={i} className="dot grid start">
                                                                     <Title icon={RxDotFilled} title={dot} fontSize = {25}/>
-                                                                    <Photo img={object[k].dots[dot][0]} wid={75} desc={object[k].dots[dot][0]}/>
+                                                                    <Photo img={require(`../../Topics/${weekData[weeks].extension}${object[k].dots[dot][0]}`)} wid={75} desc={object[k].dots[dot][0]}/>
                                                                 </div>
                                                             )
                                                         }):""

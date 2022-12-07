@@ -10,10 +10,6 @@
     position: relative;
 }
 
-.home .container .pow .contain picture img {
-    width: 200px;
-}
-
 .home .container .pow .contain .info {
     gap: 20px;
 }
@@ -88,19 +84,6 @@
     cursor: pointer;
     box-shadow: var(--box);
     border-color: var(--main-color);
-}
-
-.home .container .recent-week .contain .boxes .week .icon {
-    width: 100%;
-    position: relative;
-    height: 200px;
-    overflow: hidden;
-}
-
-.home .container .recent-week .contain .boxes .week .icon img {
-    width: 100%;
-    position: absolute;
-    top: -25%;
 }
 
 .home .container .recent-week .contain .boxes .week article {

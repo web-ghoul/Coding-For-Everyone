@@ -36,9 +36,41 @@ body {
 /*Header Section*/
 
 header .contain {
-    padding: 20px 120px;
+    padding: 0px 120px;
     gap: 50px;
     transition: var(--trans);
+}
+
+header .contain {
+    background-color: var(--blk-color);
+    box-shadow: var(--box);
+}
+
+header .contain .logo {
+    gap: 30px;
+}
+
+header .contain .logo picture img {
+    width: 120px;
+}
+
+header .contain .logo span {
+    font-size: 35px;
+    color: var(--main-color);
+}
+
+header .contain nav ul {
+    gap: 50px;
+}
+
+header .contain nav ul li a {
+    font-size: 25px;
+    color: var(--wt-color);
+    transition: var(--trans);
+}
+
+header .contain nav ul li a:hover {
+    color: var(--main-color);
 }
 
 
@@ -298,4 +330,24 @@ button {
     background-color: var(--main-color);
     width: 50px;
     height: 50px;
+}
+
+
+/*Photo Section*/
+
+picture.icon {
+    width: 100%;
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+picture img {
+    width: 100%;
+}
+
+picture.icon img {
+    width: 100%;
+    position: absolute;
+    top: -25%;
 }

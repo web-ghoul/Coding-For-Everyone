@@ -1,19 +1,24 @@
-// import styles from './Header.modulus.css';
+//Libraries
 import React from 'react';
 import { Outlet, Link } from "react-router-dom";
+
+//Style Files
 import styles from '../../../Framework/CSS/Framework.modulus.css'
-import imgLogo from "../../../Images/waitng-illustration.svg"
-import style from "./Header.modulus.css"
+
+//Images
+import imgLogo from "../../../Images/photo (153).png"
+
+
+//Components
+import Photo from "../Photo/Photo"
 const  Header = () => {
   return (
     <header>
       <div className="contain flex between">
         <div className="logo flex center">
           <Link to="/" className='flex center'>
-            <picture>
-              <img src={imgLogo} alt="Logo image" />
-            </picture>
-            <div className="icon">Coding for Everyone</div>
+            <Photo img={imgLogo} desc={"Logo image"}/>
+            <span>Coding for Everyone</span>
           </Link>
         </div>
         <nav>
@@ -23,9 +28,6 @@ const  Header = () => {
                 </li>
                 <li>
                     <Link to="/topics">Topics</Link>
-                </li>
-                <li>
-                    <Link to="/tasks">Tasks</Link>
                 </li>
             </ul>
         </nav>

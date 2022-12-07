@@ -3,7 +3,7 @@ import React,{useState,useEffect} from 'react';
 import { Outlet, Link } from "react-router-dom";
 
 //Json File
-import week_data from '../../data/weeks.json'
+import data from '../../data/weeks.js'
 
 //Components
 import Head from "../Main-Components/Head/Head"
@@ -13,9 +13,9 @@ import style from "./Topics.modulus.css"
 import styles from "../../Framework/CSS/Framework.modulus.css"
 
 //Images
-import topicImg from "../../Images/Premium Vector _ Online conference meeting   illustration.jfif"
+import topicImg from "../../Images/photo (1).gif"
 const  Topics = () =>{
-    const [weekData,useWeekData] = useState(week_data) 
+    const [weekData,useWeekData] = useState(data) 
     const [weeks,setWeeks] = useState([])
     useEffect(()=>{
         let weeksNumber =[];
@@ -46,11 +46,12 @@ const  Topics = () =>{
                     <div className="boxes grid stretch start">
                         {
                             weeks.map(w=>{
+                                console.log(weekData[w].urlImg)
                                 return (
                                     <div key={weekData[w].id} className="week grid stretch">
                                         <Link to = {weekData[w].link} >
                                             <div className="icon">
-                                                <img src= {weekData[w].urlImg} alt="Week Image" />
+                                                <img src= {require(`../../Images/${weekData[w].urlImg}`)} alt="Week Image" />
                                             </div>
                                             <article className='grid start'>
                                                 <div className="week-name">{weekData[w].name}</div>
