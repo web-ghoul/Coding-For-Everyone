@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.js": "/Coding-For-Everyone/static/js/main.afc010d4.js",
+    "main.js": "/Coding-For-Everyone/static/js/main.9f420d89.js",
+    "static/media/5213655.jpg": "/Coding-For-Everyone/static/media/5213655.6498e84ef71cb3f18f41.jpg",
     "index.html": "/Coding-For-Everyone/index.html",
-    "main.afc010d4.js.map": "/Coding-For-Everyone/static/js/main.afc010d4.js.map"
+    "main.9f420d89.js.map": "/Coding-For-Everyone/static/js/main.9f420d89.js.map"
   },
   "entrypoints": [
-    "static/js/main.afc010d4.js"
+    "static/js/main.9f420d89.js"
   ]
 }
