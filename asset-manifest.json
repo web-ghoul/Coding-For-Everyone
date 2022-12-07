@@ -1,11 +1,18 @@
 {
   "files": {
-    "main.js": "/Coding-For-Everyone/static/js/main.3ba5fa61.js",
-    "static/media/6709680.jpg": "/Coding-For-Everyone/static/media/6709680.f8be533aa6baf40a83fc.jpg",
+    "main.css": "/Coding-For-Everyone/static/css/main.db22fc00.css",
+    "main.js": "/Coding-For-Everyone/static/js/main.3726369c.js",
+    "static/media/photo (1).gif": "/Coding-For-Everyone/static/media/photo (1).e9a09d0eb33fdf5e401f.gif",
+    "static/media/Number-System.png": "/Coding-For-Everyone/static/media/Number-System.4c6c5cb0a6a41decc8e4.png",
+    "static/media/Hexadecimal-to-Octal-Conversion1.png": "/Coding-For-Everyone/static/media/Hexadecimal-to-Octal-Conversion1.f742f0ca300845f2e738.png",
+    "static/media/photo (1).jfif": "/Coding-For-Everyone/static/media/photo (1).c4c6709c26b90fd84682.jfif",
+    "static/media/binary.jpeg": "/Coding-For-Everyone/static/media/binary.8864f589bfa21d85f9fb.jpeg",
     "index.html": "/Coding-For-Everyone/index.html",
-    "main.3ba5fa61.js.map": "/Coding-For-Everyone/static/js/main.3ba5fa61.js.map"
+    "main.db22fc00.css.map": "/Coding-For-Everyone/static/css/main.db22fc00.css.map",
+    "main.3726369c.js.map": "/Coding-For-Everyone/static/js/main.3726369c.js.map"
   },
   "entrypoints": [
-    "static/js/main.3ba5fa61.js"
+    "static/css/main.db22fc00.css",
+    "static/js/main.3726369c.js"
   ]
 }
